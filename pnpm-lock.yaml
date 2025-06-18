@@ -1,0 +1,13 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@rspack/cli':
+    specifier: /Users/bytedance/Documents/github/rspack/packages/rspack-cli
+    version: link:../../github/rspack/packages/rspack-cli
+  '@rspack/core':
+    specifier: /Users/bytedance/Documents/github/rspack/packages/rspack
+    version: link:../../github/rspack/packages/rspack
