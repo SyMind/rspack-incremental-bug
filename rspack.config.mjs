@@ -32,6 +32,8 @@ class Plugin {
 						} else {
 							console.log("Entry added successfully", module.identifier());
 						}
+						const exportsInfo = compilation.moduleGraph.getExportsInfo(module);
+						exportsInfo.setUsedInUnknownWay("main");
 						resolve();
 					}
 				)
@@ -87,7 +89,7 @@ export default defineConfig({
 	},
 	experiments: {
 		css: true,
-		// incremental: false
+		incremental: false
 	},
 	devServer: {
 		hot: false,
